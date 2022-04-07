@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+/* header */
+.container__header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 0 10px 10px;
+}
+
+/* profile (sticky) */
+.container__header-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 7px 0;
+    left: 0;
+    background: #fff;
+}
+
+.container__header-1-username{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container__header-1-username > span{
+    font-weight: bold;
+    font-size: 17px;
+    margin-right: 3px;
+}
+
+.container__header-1-username > i{
+    align-self: flex-end;
+}
+
+.container__header-1-btns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.container__header-1-btns > button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 25px;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* profile img & numbers */
+.container__header-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.container__header-2-user-img > img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.container__header-2-user-numbers{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.container__header-2-user-numbers > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container__header-2-user-numbers > div > .user-numbers-1{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container__header-2-user-numbers > div > .user-numbers-2{
+    font-size: 12px;
+}
+
+
+/* .profile info -> name & bio */
+.container__header-3{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5px;
+    background: #fff;
+}
+
+.container__header-3-name{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.container__header-3-bio{
+    font-size: 14px;
+    word-break: break-all;
+}
+
+
+/* set status btn & edit profile */
+.container__header-4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    background: #fff;
+    margin-top: 10px;
+}
+
+.container__header-4-setstatus-btn{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container__header-4-setstatus-btn > button{
+    padding: 3px 10px 5px 3px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container__header-4-setstatus-btn > button > i{
+    font-size: 20px;
+    padding-top: 1px;
+}
+
+.container__header-4-setstatus-btn > button > span{
+    font-size: 14px;
+}
+
+.container__header-4-edit-profile-btn{
+    width: 100%;
+    column-gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container__header-4-edit-profile-btn > button{
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    outline: 1px solid gray;
+    font-weight: bold;
+    padding: 5px;
+    color: #000;
+    height: 30px;
+}
+
+.container__header-4-edit-profile-btn-large{
+    width: 100%;
+    font-size: 14px;
+}
+
+.container__header-4-edit-profile-btn-small{
+    width: 30px;
+    font-size: 19px;
+}
+
+
+/* stories settings */
+.container__stories{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 5px;
+}
+
+.container__stories-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__stories-title > span{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.container__stories-title > i{
+    font-size: 12px;
+}
+
+.container__stories-desc{
+    width: 100%;
+    font-size: 14px;
+    word-break: break-all;
+}
+
+/* stories */
+.container__stories-stories{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+    padding: 5px 0 0 5px;
+    column-gap: 10px;
+    overflow-x: scroll;
+}
+
+.container__stories-stories::-webkit-scrollbar{
+    height: 5px;
+}
+
+.container__stories-stories > .storie{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.storie-plus{
+    border: 1px solid black;
+}
+
+.storie-bg{
+    background: #efefef;
+}
+
+
+/* posts */
+.container__post{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1px;
+}
+
+.container__posts-btns{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 1px 1px #8080807e;
+}
+
+.container__posts-btns > button{
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    cursor: pointer;
+    border: none;
+    color: #808080df;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.container__posts-btns > button.btn-post-active{
+    color: #000;
+    border-bottom: 1.5px solid black;
+}
+
+/* posts container */
+.container__post-posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+.container__post-posts > div{
+    width: 100%;
+    height: 100%;
+}
+
+.container__post-posts > div > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
